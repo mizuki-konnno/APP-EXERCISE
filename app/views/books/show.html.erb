@@ -1,0 +1,22 @@
+<div class = "box">
+
+<table>
+
+<p id="notice">
+    <%= notice %>
+</p>
+
+<tr>
+<th>Title:</th>
+<td><p><%= @book.title %></p></td>
+</tr>
+<tr>
+<th>Body:</th>
+<td><p><%= @book.body %></p></td>
+</tr>
+</table>
+
+<%= link_to "Edit", edit_book_path(@book) %>
+<%= link_to 'Back',books_path %>
+
+</div>
